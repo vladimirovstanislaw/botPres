@@ -1,0 +1,16 @@
+docker run --name rgBotBackPresentingDB \
+-e POSTGRES_PASSWORD=pwd \
+-e POSTGRES_USER=usr \
+-e POSTGRES_DB=rgBotBackPresentingDB \
+-p 5431:5432 \
+postgres:13
+
+//SERVICE
+
+./gradlew :jib
+
+winpty docker login registry.gitlab.com/stasvladimirov/presentingproject:0.0.0-8
+
+docker run --name botTesting \
+-p 9001:9001 \
+registry.gitlab.com/stasvladimirov/presentingproject:0.0.0-8

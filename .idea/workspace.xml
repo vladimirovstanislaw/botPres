@@ -4,19 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea3fec09-a1a7-461f-b432-3e904fa8223e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/Main.java" afterDir="false" />
+    <list default="true" id="ea3fec09-a1a7-461f-b432-3e904fa8223e" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/jib.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/ServiceEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/ServiceEntryWithOtherData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/Tyre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/TyreSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/model/WholeUserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/ServiceEntryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/ServiceEntryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/TyreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/TyreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/TyreSetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/TyreSetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/VehicleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/WholeUserDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/DAO/services/WholeUserDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/RgBotBackApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/conf/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/controllers/InitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/parsers/ParserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/parsers/ServiceEntryParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/parsers/TyreParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/parsers/TyreSetParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/parsers/VehicleParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/plainPOJO/ServiceEntryPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/plainPOJO/TyrePOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/plainPOJO/TyreSetPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/parse/plainPOJO/VehiclePOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sv/rgBotBack/telegram/HistoricalDataBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/serviceEntry/ServiceEntrys.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/testPhones.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/tyre/Tyres.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/tyreSet/TyreSets.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vehicle/Vehicles.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sv/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +56,15 @@
     </projectState>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L60FIJKqltN6OkrK6S4ODidllb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,9 +75,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Games/rgbotbackpresenting"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Games\rgbotbackpresenting" />
+      <recent name="D:\Games\rgbotbackpresenting\src\main" />
+      <recent name="D:\Games\rgbotbackpresenting\src\main\java\ru\sv" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +95,21 @@
       <option name="presentableId" value="Default" />
       <updated>1675176122175</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1675176224134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675176224134</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1675176257237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675176257237</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,5 +122,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
