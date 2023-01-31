@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.0'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id "com.google.cloud.tools.jib" version "3.2.1"
+    id "fr.brouillard.oss.gradle.jgitver" version "0.10.0-rc03"
+}
+apply from: 'jib.gradle'
+
+group = 'ru.sv'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+jgitver {
+    strategy = "PATTERN"
+    nonQualifierBranches = "master"
+    tagVersionPattern = "\${v}\${<meta.DIRTY_TEXT}"
+    versionPattern =
+            "\${v}\${<meta.COMMIT_DISTANCE}\${<meta.GIT_SHA1_8}" +
+                    "\${<meta.QUALIFIED_BRANCH_NAME}\${<meta.DIRTY_TEXT}-SNAPSHOT"
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation("org.postgresql:postgresql")
+    implementation('org.flywaydb:flyway-core')
+    implementation("ch.qos.logback:logback-classic")
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.apache.poi:poi:3.9'
+    implementation 'org.apache.poi:poi-ooxml:3.9'
+    implementation 'org.telegram:telegrambots-spring-boot-starter:6.3.0'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
