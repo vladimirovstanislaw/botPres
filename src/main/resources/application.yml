@@ -1,0 +1,25 @@
+server:
+  port: 9001
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: POSTGRESQL
+    show-sql: false
+    properties:
+      hibernate:
+        default_schema: public
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://host.docker.internal:5431/rgBotBackPresentingDB
+    username: usr
+    password: pwd
+    driverClassName: org.postgresql.Driver
+hibernate:
+  jdbc:
+    lob:
+      non_contextual_creation: true
+telegram-bot:
+  name: HistoricalDataBot
+  token: 5839548096:AAE1fMElnM8iu8__TiHWxmULzGJ1QgOJ2Bo
+#
